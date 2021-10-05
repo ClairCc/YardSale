@@ -1,0 +1,13 @@
+:root {
+  --veryLigthPink: #c7c7c7;
+  --textInputField: #f7f7f7;
+  --hospitalGreen: #acd9b2;
+  --black: #000;
+  --white: #fff;
+  --principalFont: "Quicksand", sans-serif;
+  --secundaryFont: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--secundaryFont);
+}
