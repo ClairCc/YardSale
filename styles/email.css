@@ -1,0 +1,22 @@
+.email_img {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: var(--textInputField);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email_img img {
+  width: 80px;
+}
+.resend {
+  font-size: var(--sm);
+}
+.resend span {
+  color: var(--veryLigthPink);
+}
+.resend a {
+  color: var(--hospitalGreen);
+  text-decoration: none;
+}

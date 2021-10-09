@@ -3,7 +3,7 @@
   --textInputField: #f7f7f7;
   --hospitalGreen: #acd9b2;
   --black: #000;
-  --white: #fff;
+  --white: #3b3b3b;
   --principalFont: "Quicksand", sans-serif;
   --secundaryFont: "Roboto", sans-serif;
   --sm: 1.4rem;
@@ -29,10 +29,11 @@ input {
   outline: none;
 }
 .login {
-  width: 100%;
+  width: 70%;
   height: 100vh;
   display: grid;
   place-items: center;
+  margin: 0 auto;
 }
 .form-container {
   display: grid;
@@ -56,23 +57,7 @@ input {
   margin-bottom: 32px;
   text-align: center;
 }
-.label {
-  margin-bottom: 4px;
-  font: var(--headline-3);
-}
-.input {
-  background-color: var(--textInputField);
 
-  border-radius: 8px;
-  height: 40px;
-  font-size: var(--md);
-  padding: 6px;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 12px;
-}
 .primary-button {
   background-color: var(--hospitalGreen);
   border-radius: 8px;
@@ -81,6 +66,7 @@ input {
   cursor: pointer;
   font: 700 var(--md) / 22px var(--principalFont);
   height: 50px;
+  border: none;
 }
 .login-button {
   margin: 14px 0 30px 0;
