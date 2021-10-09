@@ -1,13 +1,92 @@
 :root {
-  --veryLigthPink: #c7c7c7;
+  --veryLigthPink: #585858;
   --textInputField: #f7f7f7;
   --hospitalGreen: #acd9b2;
   --black: #000;
   --white: #fff;
   --principalFont: "Quicksand", sans-serif;
   --secundaryFont: "Roboto", sans-serif;
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 1.8rem;
+  --titlePrincipalFont: 700 var(--lg) / 22px var(--principalFont);
+  --subtitlePrincipalFont: 300 var(--md) / 22px var(--principalFont);
+  --headline-3: 700 var(--sm) / 14px var(--principalFont);
 }
-
+html {
+  font-size: 62.5%;
+}
 body {
-  font-family: var(--secundaryFont);
+  font-family: var(--principalFont);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input {
+  border: none;
+  outline: none;
+}
+.login {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.form-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+.logo {
+  width: 150px;
+  margin-bottom: 48px;
+  justify-self: center;
+  display: none;
+}
+.title {
+  font: var(--titlePrincipalFont);
+  margin-bottom: 12px;
+  text-align: center;
+}
+.subtitle {
+  color: var(--veryLigthPink);
+  font: var(--subtitlePrincipalFont);
+  margin-bottom: 32px;
+  text-align: center;
+}
+.label {
+  margin-bottom: 4px;
+  font: var(--headline-3);
+}
+.input {
+  background-color: var(--textInputField);
+
+  border-radius: 8px;
+  height: 40px;
+  font-size: var(--md);
+  padding: 6px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.primary-button {
+  background-color: var(--hospitalGreen);
+  border-radius: 8px;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font: 700 var(--md) / 22px var(--principalFont);
+  height: 50px;
+}
+.login-button {
+  margin: 14px 0 30px 0;
+}
+@media (max-width: 640px) {
+  .logo {
+    display: block;
+  }
 }
