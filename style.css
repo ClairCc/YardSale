@@ -27,6 +27,7 @@ body {
 input {
   border: none;
   outline: none;
+  font-family: var(--principalFont);
 }
 .login {
   width: 70%;

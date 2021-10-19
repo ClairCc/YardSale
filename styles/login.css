@@ -1,0 +1,46 @@
+:root {
+  --veryLigthPink: #585858;
+  --textInputField: #f7f7f7;
+  --hospitalGreen: #acd9b2;
+  --black: #000;
+  --white: #3b3b3b;
+  --principalFont: "Quicksand", sans-serif;
+  --secundaryFont: "Roboto", sans-serif;
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 1.8rem;
+  --titlePrincipalFont: 700 var(--lg) / 22px var(--principalFont);
+  --subtitlePrincipalFont: 300 var(--md) / 22px var(--principalFont);
+  --headline-3: 700 var(--sm) / 14px var(--principalFont);
+}
+.login .form-container .form {
+  margin-top: 152px;
+}
+.form-container {
+  height: 90%;
+}
+.form a {
+  color: #627b65;
+  font-size: var(--sm);
+  text-align: center;
+  text-decoration: none;
+}
+.button_extern {
+  align-self: center;
+}
+.signup-button {
+  background-color: transparent;
+  border: 1px solid var(--hospitalGreen);
+  color: #4a5d4c;
+}
+@media (max-width: 640px) {
+  .login .form-container .form {
+    margin: 0;
+  }
+  .login .form-container img {
+    margin-top: 24%;
+  }
+  .button_extern {
+    align-self: flex-end;
+  }
+}
